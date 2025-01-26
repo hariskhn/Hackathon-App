@@ -1,10 +1,9 @@
 "use client"
 
-import { useState } from 'react';
 import Link from 'next/link';
 
 const UserDashboard: React.FC = () => {
-  const [loanStatus, setLoanStatus] = useState('Pending');
+  const loanStatus = "Pending";
 
   const user = {
     name: 'John Doe',
@@ -19,7 +18,7 @@ const UserDashboard: React.FC = () => {
         
         <div className="bg-white p-6 rounded-lg shadow-md mb-6">
           <h3 className="text-2xl font-semibold text-gray-800">Welcome, {user.name}!</h3>
-          <p className="mt-2 text-gray-600">Here's an overview of your loan requests and personal details.</p>
+          <p className="mt-2 text-gray-600">Here&#39;s an overview of your loan requests and personal details.</p>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md mb-6">

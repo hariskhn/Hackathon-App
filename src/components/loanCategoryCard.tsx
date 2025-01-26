@@ -8,7 +8,7 @@ interface LoanCategoryCardProps {
   children?: ReactNode; // Allow children prop
 }
 
-const LoanCategoryCard: FC<LoanCategoryCardProps> = ({ title, subcategories, maxLoan, loanPeriod, children }) => {
+const LoanCategoryCard: FC<LoanCategoryCardProps> = ({ title, maxLoan, loanPeriod, children }) => {
   return (
     <div className="p-4 border rounded shadow">
       <h2 className="text-xl font-bold">{title}</h2>
